@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65293" started-at="2023-11-17T10:22:32Z" finished-at="2023-11-17T10:23:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65293" started-at="2023-11-17T10:22:32Z" finished-at="2023-11-17T10:23:37Z">
+      <class name="com.dev.Eduley.EduleyAutomationInstituteRegister">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="SetUp" is-config="true" duration-ms="6009" started-at="2023-11-17T10:22:32Z" finished-at="2023-11-17T10:22:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="setUp" is-config="true" duration-ms="3" started-at="2023-11-17T10:22:38Z" finished-at="2023-11-17T10:22:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="eduleyInstituteRegister()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="eduleyInstituteRegister" duration-ms="58955" started-at="2023-11-17T10:22:38Z" finished-at="2023-11-17T10:23:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eduleyInstituteRegister -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="tearDown" is-config="true" duration-ms="3" started-at="2023-11-17T10:23:37Z" finished-at="2023-11-17T10:23:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=eduleyInstituteRegister status=SUCCESS method=EduleyAutomationInstituteRegister.eduleyInstituteRegister()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dev.Eduley.EduleyAutomationInstituteRegister -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,6 @@
+Git PUSH Codes
+$ git add .
+$ git commit -m "second commit"
+$ git push origin master
+
+

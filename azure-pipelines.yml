@@ -1,0 +1,63 @@
+trigger:
+  - main
+  - pipeline
+
+pool:
+  vmImage: 'windows-2019'
+
+name: 0.0.$(rev:r)
+
+steps:
+  - task: Maven@3
+    displayName: 'Maven validate'
+    inputs:
+      mavenPomFile: '$(system.defaultworkingdirectory)/pom.xml'
+      goals: 'clean validate'
+
+  - task: Maven@3
+    displayName: 'Maven Test'
+    inputs:
+      mavenPomFile: '$(System.DefaultWorkingDirectory)/pom.xml'
+      goals: 'clean test'
+      publishJUnitResults: true
+      testResultsFiles: '$(System.DefaultWorkingDirectory)/target/surefire-reports/TEST-*.xml'
+      testRunTitle: 'All Index Regression'
+      javaHomeOption: 'JDKVersion'
+      mavenVersionOption: 'Default'
+      mavenAuthenticateFeed: false
+      effectivePomSkip: false
+      sonarQubeRunAnalysis: false
+    continueOnError: true
+
+  - task: PowerShell@2
+    displayName: "Generate Allure Report"
+    inputs:
+      targetType: 'inline'
+      script: |
+        # Write your PowerShell commands here.
+        iwr -useb get.scoop.sh -outfile 'install.ps1'
+        .\install.ps1 -RunAsAdmin
+
+        scoop install allure
+
+        allure generate
+      workingDirectory: '$(System.DefaultWorkingDirectory)'
+    condition: succeededOrFailed()
+
+  - task: ArchiveFiles@2
+    displayName: 'Archive Files'
+    inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/allure-report'
+        archiveFile: '$(Build.ArtifactStagingDirectory)/HCM-API_Test-Report.zip'
+    condition: succeededOrFailed()
+  - task: SendEmail@0
+    inputs:
+      To: 'ayyappansg1@gmail.com'
+      CC: 'anbarasan.psk@gmail.com'
+      From: 'ayyappansg1@gmail.com'
+      Subject: 'Checking Test Report'
+      Body: 'For your reference.'
+      SmtpServer: 'smtp.zoho.com'
+      SmtpPort: '587'
+      SmtpUsername: 'ayyappansg1@gmail.com'
+      SmtpPassword: '$(password)'
