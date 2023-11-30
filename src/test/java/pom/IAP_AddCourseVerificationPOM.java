@@ -134,7 +134,11 @@ public class IAP_AddCourseVerificationPOM {
 	public By transcriptedCourseNobutton=By.xpath("//button[text()='No']");
 	public By publishPageSaveButton=By.xpath("//button[text()='Save']");
 	
-	public By coursesPage=By.xpath("//a[text()='Courses']");
+	public By coursesButton=By.xpath("//a[text()='Courses']");
+	public By coursesName=By.xpath("//h6[text()='Core Java_08']");
+	public By SubscribeNowButton=By.xpath("(//button[text()='Subscribe Now'])[1]");
+	public By loginButton=By.xpath("(//span[text()='Log In'])[2]");
+	
 	
 	
 	

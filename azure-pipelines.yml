@@ -50,14 +50,3 @@ steps:
         rootFolderOrFile: '$(System.DefaultWorkingDirectory)/allure-report'
         archiveFile: '$(Build.ArtifactStagingDirectory)/HCM-API_Test-Report.zip'
     condition: succeededOrFailed()
-  - task: SendEmail@0
-    inputs:
-      To: 'ayyappansg1@gmail.com'
-      CC: 'anbarasan.psk@gmail.com'
-      From: 'ayyappansg1@gmail.com'
-      Subject: 'Checking Test Report'
-      Body: 'For your reference.'
-      SmtpServer: 'smtp.zoho.com'
-      SmtpPort: '587'
-      SmtpUsername: 'ayyappansg1@gmail.com'
-      SmtpPassword: '$(password)'
