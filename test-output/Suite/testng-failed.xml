@@ -10,9 +10,9 @@
           <include name="tearDown"/>
           <include name="eduleyIAPForgotPasswordVerification"/>
           <include name="setUp"/>
+          <include name="eduleySTP_ForgotPasswordVerification"/>
           <include name="eduleyIAPLoginVerification"/>
           <include name="eduleySTP_SignupAndLoginVerification"/>
-          <include name="eduleyIAPAddCourse"/>
         </methods>
       </class> <!-- com.dev.Eduley.EduleyAutomationInstituteRegister -->
     </classes>

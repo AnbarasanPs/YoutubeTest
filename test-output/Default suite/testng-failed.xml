@@ -3,18 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dev.Eduley.EduleyAutomationInstituteRegister">
+      <class name="com.dev.Eduley.YoutubeVideoLaunch">
         <methods>
-          <include name="eduleyInstituteRegister"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
-          <include name="eduleyIAPForgotPasswordVerification"/>
+          <include name="youtubeVideoLaunchMethod"/>
           <include name="setUp"/>
-          <include name="eduleySTP_ForgotPasswordVerification"/>
-          <include name="eduleyIAPLoginVerification"/>
-          <include name="eduleySTP_SignupAndLoginVerification"/>
         </methods>
-      </class> <!-- com.dev.Eduley.EduleyAutomationInstituteRegister -->
+      </class> <!-- com.dev.Eduley.YoutubeVideoLaunch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

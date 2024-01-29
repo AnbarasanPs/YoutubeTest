@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65293" started-at="2023-11-17T10:22:32Z" finished-at="2023-11-17T10:23:37Z">
+  <suite name="Default suite" duration-ms="43921" started-at="2024-01-27T06:47:16Z" finished-at="2024-01-27T06:47:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65293" started-at="2023-11-17T10:22:32Z" finished-at="2023-11-17T10:23:37Z">
-      <class name="com.dev.Eduley.EduleyAutomationInstituteRegister">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="SetUp" is-config="true" duration-ms="6009" started-at="2023-11-17T10:22:32Z" finished-at="2023-11-17T10:22:38Z">
+    <test name="Default test" duration-ms="43921" started-at="2024-01-27T06:47:16Z" finished-at="2024-01-27T06:47:59Z">
+      <class name="com.dev.Eduley.YoutubeVideoLaunch">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.dev.Eduley.YoutubeVideoLaunch@66f57048]" name="SetUp" is-config="true" duration-ms="5910" started-at="2024-01-27T06:47:16Z" finished-at="2024-01-27T06:47:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="setUp" is-config="true" duration-ms="3" started-at="2023-11-17T10:22:38Z" finished-at="2023-11-17T10:22:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dev.Eduley.YoutubeVideoLaunch@66f57048]" name="setUp" is-config="true" duration-ms="1" started-at="2024-01-27T06:47:22Z" finished-at="2024-01-27T06:47:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="eduleyInstituteRegister()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="eduleyInstituteRegister" duration-ms="58955" started-at="2023-11-17T10:22:38Z" finished-at="2023-11-17T10:23:37Z">
+        <test-method status="PASS" signature="youtubeVideoLaunchMethod()[pri:0, instance:com.dev.Eduley.YoutubeVideoLaunch@66f57048]" name="youtubeVideoLaunchMethod" duration-ms="37103" started-at="2024-01-27T06:47:22Z" finished-at="2024-01-27T06:47:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eduleyInstituteRegister -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377]" name="tearDown" is-config="true" duration-ms="3" started-at="2023-11-17T10:23:37Z" finished-at="2023-11-17T10:23:37Z">
+        </test-method> <!-- youtubeVideoLaunchMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dev.Eduley.YoutubeVideoLaunch@66f57048]" name="tearDown" is-config="true" duration-ms="734" started-at="2024-01-27T06:47:59Z" finished-at="2024-01-27T06:47:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=eduleyInstituteRegister status=SUCCESS method=EduleyAutomationInstituteRegister.eduleyInstituteRegister()[pri:0, instance:com.dev.Eduley.EduleyAutomationInstituteRegister@32502377] output={null}]]]>
+                <![CDATA[[TestResult name=youtubeVideoLaunchMethod status=SUCCESS method=YoutubeVideoLaunch.youtubeVideoLaunchMethod()[pri:0, instance:com.dev.Eduley.YoutubeVideoLaunch@66f57048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.dev.Eduley.EduleyAutomationInstituteRegister -->
+      </class> <!-- com.dev.Eduley.YoutubeVideoLaunch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

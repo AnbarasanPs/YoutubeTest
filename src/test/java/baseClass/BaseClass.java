@@ -45,8 +45,8 @@ public class BaseClass {
 		localHelper.loadProperties();
 		String browser=Constants.Browser;
 		if(browser.equals("chrome")){
-			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\chennai\\eclipse-workspace\\Eduley\\Driver\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\chennai\\eclipse-workspace\\Eduley\\Driver\\chromedriver.exe");
 			ChromeOptions options=new ChromeOptions();      
 			options.addArguments("--incognito");
 			options.addArguments("--no-sandbox");
@@ -84,7 +84,7 @@ public class BaseClass {
 				e.printStackTrace();
 			}
 		}
-			//driver.quit();
+			driver.quit();
 	}
 
 }
